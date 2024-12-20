@@ -26,7 +26,7 @@ const PlayerSubmissionForm = ({ index, sendSubmission, fields }) => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    sendSubmission(...formFields);
+    sendSubmission(formFields);
     setFormFields(buildDefaultValue(fields));
   };
 
